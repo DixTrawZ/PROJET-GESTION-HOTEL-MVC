@@ -143,8 +143,12 @@ public class Hotel {
     	int nreserv=0;
     	for(reservation reservation : reservations.values())
     	{
+    		if(reservation.getEtat() == etatreservation.En_Attente)
+    		{
     		nreserv++;
+    		}
     	}
+    		
     	return nreserv;
     }
 	//FINI ET UTILISEE
